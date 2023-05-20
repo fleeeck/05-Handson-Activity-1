@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etEntry1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Enter a text"
+        android:autofillHints="name"/>
+
+    <EditText
+        android:id="@+id/etEntry2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Enter a text"
+        android:autofillHints="name"
+        android:layout_below="@id/etEntry1"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnSwap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SWAP"
+        android:layout_toEndOf="@id/etEntry1"/>
+
+    <Button
+        android:id="@+id/btnCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHECK"
+        android:layout_below="@+id/btnSwap"
+        android:layout_toEndOf="@id/etEntry2"/>
+</RelativeLayout>
